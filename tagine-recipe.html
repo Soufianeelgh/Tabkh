@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="طريقة تحضير طاجين اللحم بالبرقوق بوصفة مغربية أصلية بنكهة رائعة.">
+    <title>طاجين اللحم بالبرقوق | Moroccan Lamb Tagine</title>
+    <link rel="stylesheet" href="style_tabkh.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>🥘 طاجين اللحم بالبرقوق | Moroccan Lamb Tagine</h1>
+        <p>وصفة مغربية أصيلة بنكهة مميزة | A traditional Moroccan dish with a unique flavor</p>
+    </div>
+</header>
+
+<section class="recipe-details">
+    <div class="container">
+        <img src="https://source.unsplash.com/800x500/?moroccan-tagine" alt="طاجين اللحم بالبرقوق المغربي التقليدي">
+
+        <button class="btn" onclick="toggleDetails()">👀 إظهار / إخفاء التفاصيل | Show / Hide Details</button>
+
+        <div id="details" style="display:none;">
+            <h2>📝 المكونات | Ingredients</h2>
+            <ul>
+                <li>1 كغ لحم غنم مقطع | 1 kg lamb, cut into pieces</li>
+                <li>2 بصلات مفرومة | 2 chopped onions</li>
+                <li>2 فصوص ثوم مفروم | 2 cloves of garlic, minced</li>
+                <li>200 غ برقوق مجفف | 200g dried prunes</li>
+                <li>ملعقة صغيرة قرفة | 1 tsp cinnamon</li>
+                <li>ملعقة صغيرة زنجبيل | 1 tsp ginger</li>
+                <li>ملعقة صغيرة كركم | 1 tsp turmeric</li>
+                <li>ملعقة صغيرة فلفل أسود | 1 tsp black pepper</li>
+                <li>ملعقتان عسل | 2 tbsp honey</li>
+                <li>ملح حسب الذوق | Salt to taste</li>
+                <li>ربع كوب لوز مقلي | 1/4 cup fried almonds</li>
+                <li>2 ملاعق زيت زيتون | 2 tbsp olive oil</li>
+            </ul>
+
+            <h2>🍽️ طريقة التحضير | Preparation</h2>
+            <ol>
+                <li>سخن الزيت في طاجين، وأضف اللحم والبصل والثوم. | Heat the oil in a tagine, add the lamb, onion, and garlic.</li>
+                <li>أضف التوابل وحرك المكونات جيدًا. | Add the spices and mix well.</li>
+                <li>أضف الماء واتركه يطهى على نار هادئة لمدة ساعة ونصف. | Add water and let it cook on low heat for 1.5 hours.</li>
+                <li>في وعاء آخر، اغلي البرقوق مع قليل من الماء والقرفة والعسل حتى يصبح طريًا. | In another pot, simmer prunes with some water, cinnamon, and honey until soft.</li>
+                <li>أضف البرقوق فوق اللحم واتركه لمدة 10 دقائق. | Add the prunes to the lamb and let it cook for 10 more minutes.</li>
+                <li>زينه باللوز المقلي وقدمه ساخنًا. | Garnish with fried almonds and serve hot.</li>
+            </ol>
+        </div>
+
+        <!-- فيديو الوصفة -->
+        <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
+        <div class="video-container">
+            <img src="https://img.youtube.com/vi/BAl9HT2V3bI/0.jpg" alt="طريقة تحضير طاجين اللحم بالبرقوق" class="video-thumbnail" onclick="openVideo()">
+            <div id="video-popup" class="video-popup">
+                <div class="video-content">
+                    <span class="close" onclick="closeVideo()">&times;</span>
+                    <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
+                    <iframe id="video-frame" src="https://www.youtube.com/embed//_6KzyyyRxZc?autoplay=0&rel=0" title="طريقة تحضير طاجين اللحم بالبرقوق" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <a href="tabkh.html" class="btn">🔙 العودة للصفحة الرئيسية | Back to Home</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<!-- كود JavaScript لتشغيل الفيديو وإخفاء / إظهار التفاصيل -->
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("details");
+        var btn = document.querySelector(".btn");
+
+        if (details.style.display === "none") {
+            details.style.display = "block";
+            btn.innerHTML = "👀 إخفاء التفاصيل | Hide Details";
+        } else {
+            details.style.display = "none";
+            btn.innerHTML = "👀 إظهار التفاصيل | Show Details";
+        }
+    }
+
+    function openVideo() {
+        document.getElementById("video-popup").style.display = "flex";
+    }
+
+    function closeVideo() {
+        document.getElementById("video-popup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

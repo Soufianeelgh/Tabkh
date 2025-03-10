@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🫓 وصفة المسمن | Msemen Recipe</title>
+    <link href="style_tabkh.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- شريط التنقل -->
+<nav>
+    <ul>
+        <li><a href="tabkh.html">🏠 الصفحة الرئيسية</a></li>
+        <li><a href="harira-recipe.html">🥣 الحريرة</a></li>
+        <li><a href="cake-recipe.html">🎂 الكيك</a></li>
+        <li><a href="pizza-recipe.html">🍕 البيتزا</a></li>
+        <li><a href="baghrir-recipe.html">🥞 البغرير</a></li>
+        <li><a href="msemen-recipe.html">🫓 المسمن</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <h1>🫓 وصفة المسمن | Msemen Recipe</h1>
+        <p>تعلم كيفية تحضير المسمن المغربي اللذيذ! 🫓</p>
+    </div>
+</header>
+
+<section class="recipe-details">
+    <div class="container">
+        <h2>📝 المكونات:</h2>
+        <ul>
+            <li>2 كوب دقيق أبيض</li>
+            <li>1 كوب دقيق القمح الكامل</li>
+            <li>1 ملعقة صغيرة ملح</li>
+            <li>1 ملعقة صغيرة سكر</li>
+            <li>1 ¼ كوب ماء دافئ</li>
+            <li>½ كوب زبدة مذابة وزيت للدهن</li>
+        </ul>
+
+        <h2>👨‍🍳 طريقة التحضير:</h2>
+        <ol>
+            <li>اخلط الدقيق مع الملح والسكر، ثم أضف الماء تدريجيًا حتى تحصل على عجينة لينة.</li>
+            <li>اترك العجينة ترتاح لمدة 15 دقيقة.</li>
+            <li>قسّم العجينة إلى كرات صغيرة وادهنها بالزيت.</li>
+            <li>افرد كل كرة على شكل مربع وادهنها بالزبدة.</li>
+            <li>اطوِ العجينة على شكل مربع ثم اقليها في مقلاة ساخنة.</li>
+            <li>قدّم المسمن ساخنًا مع العسل أو الجبن.</li>
+        </ol>
+
+        <h2>🎥 فيديو طريقة التحضير:</h2>
+        <div class="video-container">
+        <img src="https://img.youtube.com/vi/E8FbKHKIVf0/0.jpg" alt="طريقة تحضير المسمن" class="video-thumbnail" onclick="openVideo('E8FbKHKIVf0')">
+        </div>
+
+        <!-- تضمين السكريبت في أسفل الصفحة أو في ملف خارجي -->
+        
+        <div class="navigation-buttons">
+            <a href="baghrir-recipe.html" class="btn">🔙 العودة إلى وصفة البغرير</a>
+            <a href="harira-recipe.html" class="btn">🥣 العودة إلى وصفة الحريرة</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<script>
+    // دالة لفتح الفيديو عند النقر على الصورة المصغرة
+    function openVideo(videoId) {
+        // تحديد الرابط الخاص بالفيديو مع تعطيل الاقتراحات بعد انتهاء الفيديو
+        var videoUrl = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+
+        // إنشاء نافذة جديدة تحتوي على الفيديو
+        var iframe = document.createElement('iframe');
+        iframe.src = videoUrl;
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.frameBorder = "0";
+        iframe.allowFullscreen = true;
+
+        // استبدال الصورة المصغرة بالـ iframe
+        var container = document.querySelector('.video-container');
+        container.innerHTML = ''; // إزالة الصورة المصغرة
+        container.appendChild(iframe); // إضافة الفيديو داخل العنصر
+    }
+</script>
+
+</body>
+</html>

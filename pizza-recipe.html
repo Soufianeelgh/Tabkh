@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفة بيتزا إيطالية | Italian Pizza Recipe</title>
+    <link href="style_tabkh.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>🍕 وصفة بيتزا إيطالية | Italian Pizza Recipe</h1>
+    </div>
+</header>
+
+<section id="recipe-details">
+    <div class="container">
+        <img src="file:///storage/emulated/0/.images/.bak/pizza-2589575_1280.jpg" alt="بيتزا إيطالية" class="recipe-image">
+        <h2>المكونات:</h2>
+        <ul>
+            <li>2 كوب دقيق</li>
+            <li>1 ملعقة صغيرة ملح</li>
+            <li>1 ملعقة صغيرة خميرة</li>
+            <li>3/4 كوب ماء دافئ</li>
+            <li>2 ملعقة كبيرة زيت زيتون</li>
+            <li>1/2 كوب صلصة طماطم</li>
+            <li>1 كوب جبنة موتزاريلا</li>
+            <li>إضافات حسب الرغبة (فطر، زيتون، بيبروني)</li>
+        </ul>
+
+        <h2>طريقة التحضير:</h2>
+        <ol>
+            <li>اخلط الدقيق مع الملح والخميرة.</li>
+            <li>أضف الماء الدافئ وزيت الزيتون واعجن جيدًا.</li>
+            <li>اترك العجين ليختمر لمدة ساعة.</li>
+            <li>افرد العجينة وضع عليها الصلصة والجبنة والإضافات.</li>
+            <li>اخبز في فرن ساخن 220°C لمدة 15-20 دقيقة.</li>
+            <li>استمتع ببيتزا شهية! 🍕</li>
+        </ol>
+
+        <div class="video-container">
+            <img src="https://img.youtube.com/vi/XXXXXXXXXXX/0.jpg" alt="وصفة البيتزا" class="video-thumbnail" onclick="openVideo()">
+            <div id="video-popup" class="video-popup">
+                <div class="video-content">
+                    <span class="close" onclick="closeVideo()">&times;</span>
+                    <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
+                    <iframe id="video-frame" src="https://www.youtube.com/embed/w9VTlW_tI8I?autoplay=0&rel=0" title="طريقة تحضير البيتزا" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <a href="tabkh.html" class="btn">🔙 العودة للوصفات</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<script>
+function openVideo() {
+    document.getElementById("video-popup").style.display = "flex";
+}
+
+function closeVideo() {
+    document.getElementById("video-popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>

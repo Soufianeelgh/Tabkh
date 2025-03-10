@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 كيكة الشوكولاتة | Chocolate Cake</title>
+    <link href="style_tabkh.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- شريط التنقل -->
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
+        <li><a href="harira-recipe.html">🥣 الحريرة</a></li>
+        <li><a href="cake-recipe.html">🎂 الكيك</a></li>
+        <li><a href="pizza-recipe.html">🍕 البيتزا</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <h1>🎂 وصفة كيكة الشوكولاتة | Chocolate Cake Recipe</h1>
+        <p>طريقة تحضير كيكة الشوكولاتة اللذيذة بسهولة! 🍫</p>
+    </div>
+</header>
+
+<section class="recipe-details">
+    <div class="container">
+        <h2>📝 المكونات:</h2>
+        <ul>
+            <li>2 كوب دقيق</li>
+            <li>1 كوب سكر</li>
+            <li>1 كوب حليب</li>
+            <li>1/2 كوب كاكاو</li>
+            <li>2 بيضات</li>
+            <li>1/2 كوب زبدة مذابة</li>
+            <li>1 ملعقة صغيرة بيكنج بودر</li>
+            <li>1 ملعقة صغيرة فانيليا</li>
+        </ul>
+
+        <h2>👨‍🍳 طريقة التحضير:</h2>
+        <ol>
+            <li>سخّن الفرن إلى 180 درجة مئوية.</li>
+            <li>اخلط السكر والبيض والفانيليا جيدًا.</li>
+            <li>أضف الزبدة ثم الحليب واخلطهم.</li>
+            <li>أضف الدقيق والكاكاو والبيكنج بودر تدريجياً مع التحريك.</li>
+            <li>اسكب الخليط في قالب كيك مدهون بالزبدة.</li>
+            <li>اخبز لمدة 30-35 دقيقة حتى ينضج.</li>
+            <li>اترك الكيك يبرد وزينه بالشوكولاتة المذابة.</li>
+        </ol>
+
+        <!-- فيديو الوصفة -->
+        <h2>🎥 فيديو طريقة التحضير:</h2>
+        <div class="video-container">
+        <img src="https://img.youtube.com/vi/0_jLf3DdNSE/0.jpg" alt="كيكة الشوكولاتة" class="video-thumbnail" onclick="openVideo()">
+        <div id="video-popup" class="video-popup">
+        <div class="video-content">
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0_jLf3DdNSE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+
+        <!-- أزرار التنقل بين الوصفات -->
+        <div class="navigation-buttons">
+            <a href="pizza-recipe.html" class="btn">🍕 الوصفة التالية: البيتزا</a>
+            <a href="harira-recipe.html" class="btn">🔙 العودة إلى وصفة الحريرة</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<!-- كود JavaScript لتشغيل الفيديو -->
+<script>
+function openVideo() {
+    document.getElementById("video-popup").style.display = "flex";
+    // قم بإضافة رابط الفيديو المناسب
+    document.getElementById("video-frame").src = "https://www.youtube.com/embed/XXXXXXXXXXX?autoplay=1&rel=0";
+}
+
+function closeVideo() {
+    document.getElementById("video-popup").style.display = "none";
+    document.getElementById("video-frame").src = ""; // إيقاف الفيديو عند إغلاق النافذة
+}
+</script>
+
+</body>
+</html>
