@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🫓 وصفة المسمن | Msemen Recipe</title>
+    
+    <link href="style_tabkh.css" rel="stylesheet">
+
+
+<style>
+/* تنسيق الأيقونة لفتح القائمة */
+    #menuIcon {
+    font-size: 30px;
+    
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    right: 280px;
+    z-index: 100;
+    text-decoration:none;
+    margin-bottom:50px;
+    color:white;
+    
+    
+    
+   
+    }
+    
+    /* القائمة المنبثقة */
+    .dropdown-menu {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed;
+    top: 60px;
+    right: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    }
+    
+    .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .dropdown-menu ul li {
+    margin: 10px 0;
+    }
+    
+    .dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    /* تنسيق الصفحة عند الضغط على الأيقونة */
+    body {
+    font-family: Arial, sans-serif;
+    }
+    
+</style>
+
+
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
+
+ <!-- القائمة المنبثقة -->
+ <div id="menuDropdown" class="dropdown-menu">
+   <ul>
+    <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
+   
+  
+   <li><a href="harira-recipe.html">🥣 الحريرة</a></li>
+   <li><a href="pizza-recipe.html">🍕 البيتزا</a></li>
+   <li><a href="cake-recipe.html">🎂 الكيك</a></li>
+  <li><a href="index">المجتمع</a></li>
+   
+     <li><a href="about.html" target="_blank">من نحن</a></li>
+     <li><a href="privacy.html" target="_blank">سياسة الخصوصية</a></li>
+     <li><a href="contact.html" target="_blank">اتصل بنا</a></li>
+   </ul>
+ </div>
+
+<header>
+
+    <div class="container">
+        <h1>🫓 وصفة المسمن | Msemen Recipe</h1>
+        <p>تعلم كيفية تحضير المسمن المغربي اللذيذ! 🫓</p>
+    </div>
+</header>
+
+<section class="recipe-details">
+    <div class="container">
+        <h2>📝 المكونات:</h2>
+        <ul>
+            <li>2 كوب دقيق أبيض</li>
+            <li>1 كوب دقيق القمح الكامل</li>
+            <li>1 ملعقة صغيرة ملح</li>
+            <li>1 ملعقة صغيرة سكر</li>
+            <li>1 ¼ كوب ماء دافئ</li>
+            <li>½ كوب زبدة مذابة وزيت للدهن</li>
+        </ul>
+
+        <h2>👨‍🍳 طريقة التحضير:</h2>
+        <ol>
+            <li>اخلط الدقيق مع الملح والسكر، ثم أضف الماء تدريجيًا حتى تحصل على عجينة لينة.</li>
+            <li>اترك العجينة ترتاح لمدة 15 دقيقة.</li>
+            <li>قسّم العجينة إلى كرات صغيرة وادهنها بالزيت.</li>
+            <li>افرد كل كرة على شكل مربع وادهنها بالزبدة.</li>
+            <li>اطوِ العجينة على شكل مربع ثم اقليها في مقلاة ساخنة.</li>
+            <li>قدّم المسمن ساخنًا مع العسل أو الجبن.</li>
+        </ol>
+
+        <h2>🎥 فيديو طريقة التحضير:</h2>
+        <div class="video-container">
+        <img src="https://img.youtube.com/vi/E8FbKHKIVf0/0.jpg" alt="طريقة تحضير المسمن" class="video-thumbnail" onclick="openVideo('E8FbKHKIVf0')">
+        </div>
+
+        <!-- تضمين السكريبت في أسفل الصفحة أو في ملف خارجي -->
+        
+        <div class="navigation-buttons">
+            <a href="baghrir-recipe.html" class="btn">🔙 العودة إلى وصفة البغرير</a>
+            <a href="harira-recipe.html" class="btn">🥣 العودة إلى وصفة الحريرة</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<script>
+    // دالة لفتح الفيديو عند النقر على الصورة المصغرة
+    function openVideo(videoId) {
+        // تحديد الرابط الخاص بالفيديو مع تعطيل الاقتراحات بعد انتهاء الفيديو
+        var videoUrl = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+
+        // إنشاء نافذة جديدة تحتوي على الفيديو
+        var iframe = document.createElement('iframe');
+        iframe.src = videoUrl;
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.frameBorder = "0";
+        iframe.allowFullscreen = true;
+
+        // استبدال الصورة المصغرة بالـ iframe
+        var container = document.querySelector('.video-container');
+        container.innerHTML = ''; // إزالة الصورة المصغرة
+        container.appendChild(iframe); // إضافة الفيديو داخل العنصر
+    }
+    
+    
+    function toggleMenu() {
+    var menu = document.getElementById('menuDropdown');
+    if (menu.style.display === "block") {
+    menu.style.display = "none";
+    } else {
+    menu.style.display = "block";
+    }
+    }
+    
+    // انتظر حتى يتم تحميل الصفحة بالكامل
+    window.onload = function() {
+    // إضافة كلاس "loaded" بعد تحميل الصفحة
+    document.body.classList.add('loaded');
+    };
+</script>
+
+</body>
+</html>

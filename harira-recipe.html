@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفة الحريرة المغربية | Harira Recipe</title>
+    <link href="style_tabkh.css" rel="stylesheet">
+<style>
+/* تنسيق الأيقونة لفتح القائمة */
+    #menuIcon {
+    font-size: 30px;
+    
+    cursor: pointer;
+    position: fixed;
+    top: 4px;
+    right: 280px;
+    z-index: 100;
+    text-decoration:none;
+    margin-bottom:50px;
+    color:white;
+    
+    
+    
+   
+    }
+    
+    /* القائمة المنبثقة */
+    .dropdown-menu {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed;
+    top: 60px;
+    right: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    }
+    
+    .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .dropdown-menu ul li {
+    margin: 10px 0;
+    }
+    
+    .dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    /* تنسيق الصفحة عند الضغط على الأيقونة */
+    body {
+    font-family: Arial, sans-serif;
+    }
+    
+</style>
+
+
+</head>
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<header>
+</div>
+<a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
+
+ <!-- القائمة المنبثقة -->
+ <div id="menuDropdown" class="dropdown-menu">
+   <ul>
+    <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
+   
+  
+   <li><a href="harira-recipe.html">🥣 الحريرة</a></li>
+   <li><a href="pizza-recipe.html">🍕 البيتزا</a></li>
+   <li><a href="cake-recipe.html">🎂 الكيك</a></li>
+  <li><a href="index">المجتمع</a></li>
+   
+     <li><a href="about.html" target="_blank">من نحن</a></li>
+     <li><a href="privacy.html" target="_blank">سياسة الخصوصية</a></li>
+     <li><a href="contact.html" target="_blank">اتصل بنا</a></li>
+   </ul>
+ </div>
+
+    
+     
+    
+   
+    <div class="container">
+    <h1>🌙🥣 وصفة الحريرة المغربية | Moroccan Harira Recipe 🏮</h1>
+    </div>
+    
+</header>
+
+<section id="recipe-details">
+    <div class="container">
+        <img src="https://source.unsplash.com/600x400/?soup" alt="الحريرة المغربية" class="recipe-image">
+        
+        <h2>📌 المكونات:</h2>
+        <ul>
+            <li>1 كوب حمص منقوع ومسلوق</li>
+            <li>1/2 كوب عدس</li>
+            <li>1 بصلة مفرومة</li>
+            <li>2 حبة طماطم مبشورة</li>
+            <li>2 ملاعق كبيرة معجون طماطم</li>
+            <li>1/2 كوب كزبرة وبقدونس مفرومين</li>
+            <li>1/2 كوب كرفس مفروم</li>
+            <li>1/2 كوب شعرية</li>
+            <li>ملعقة صغيرة زنجبيل</li>
+            <li>ملعقة صغيرة كركم</li>
+            <li>ملعقة صغيرة فلفل أسود</li>
+            <li>ملعقة صغيرة ملح (حسب الذوق)</li>
+            <li>2 ملاعق كبيرة زيت زيتون</li>
+            <li>1/4 كوب دقيق مذاب في كوب ماء</li>
+            <li>6 أكواب ماء أو مرق</li>
+        </ul>
+
+        <h2>🥄 طريقة التحضير:</h2>
+        <ol>
+            <li>في قدر كبير، سخّن زيت الزيتون وأضف البصل حتى يذبل.</li>
+            <li>أضف اللحم (اختياري)، الحمص، العدس، الطماطم، معجون الطماطم، الكزبرة، البقدونس، الكرفس، والتوابل.</li>
+            <li>أضف الماء واتركه ليغلي على نار هادئة لمدة 30 دقيقة.</li>
+            <li>أضف الدقيق المذاب في الماء مع التحريك المستمر حتى يصبح القوام كثيفًا.</li>
+            <li>أضف الشعرية واتركها تنضج لمدة 10 دقائق إضافية.</li>
+            <li>قدّم الحريرة ساخنة مع التمر والخبز المغربي! 🍲</li>
+        </ol>
+        <h2>🎥 فيديو طريقة التحضير:</h2>
+        <div class="video-container">
+        <img src="https://img.youtube.com/vi/LqfTZ9wAmoA/0.jpg" alt="وصفة الحريرة" class="video-thumbnail" onclick="document.getElementById('video-popup').style.display='block'">
+        <div id="video-popup" class="video-popup" style="display:none;">
+        <div class="video-content">
+        <span class="close" onclick="document.getElementById('video-popup').style.display='none'">&times;</span>
+        <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
+        <iframe src="https://www.youtube.com/embed/LqfTZ9wAmoA?autoplay=1&rel=0" title="طريقة تحضير الحريرة" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+
+        <a href="index.html" class="btn">🔙 العودة للوصفات</a>
+    </div>
+    
+    <div class="navigation-buttons">
+    <a href="cake-recipe.html" class="btn">🎂 الوصفة التالية: كيك الشوكولاتة</a>
+    <a href="harira-recipe.html" class="btn">🔙 العودة للقائمة</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+<script>
+function openVideo() {
+    document.getElementById("video-popup").style.display = "flex";
+    document.getElementById("video-frame").src = "https://www.youtube.com/embed/XXXXXXXXXXX";
+}
+
+function closeVideo() {
+    document.getElementById("video-popup").style.display = "none";
+    document.getElementById("video-frame").src = "";
+}
+
+
+function toggleMenu() {
+  var menu = document.getElementById('menuDropdown');
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+
+// انتظر حتى يتم تحميل الصفحة بالكامل
+window.onload = function() {
+    // إضافة كلاس "loaded" بعد تحميل الصفحة
+    document.body.classList.add('loaded');
+};
+
+</script>
+</body>
+</html>

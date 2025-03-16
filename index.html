@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفات الطبخ | Cooking Recipes</title>
+    <link href="style_tabkh.css" rel="stylesheet">
+    
+    <style>
+    /* تنسيق الأيقونة لفتح القائمة */
+    #menuIcon {
+    font-size: 30px;
+    
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 265px;
+    z-index: 100;
+    text-decoration:none;
+    margin-bottom:50px;
+    color:white;
+    
+    
+    
+   
+    }
+    
+    /* القائمة المنبثقة */
+    .dropdown-menu {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed;
+    top: 60px;
+    right: 106px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    }
+    
+    .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .dropdown-menu ul li {
+    margin: 10px 0;
+    }
+    
+    .dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    /* تنسيق الصفحة عند الضغط على الأيقونة */
+    body {
+    font-family: Arial, sans-serif;
+    }
+    </style>
+</head>
+<!-- Preloader - هذا العنصر سيظهر قبل تحميل الصفحة -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<body>
+
+<header>
+
+
+ <a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
+
+ <!-- القائمة المنبثقة -->
+ <div id="menuDropdown" class="dropdown-menu">
+   <ul>
+    <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
+   
+  
+   <li><a href="harira-recipe.html">🥣 الحريرة</a></li>
+   <li><a href="pizza-recipe.html">🍕 البيتزا</a></li>
+   <li><a href="cake-recipe.html">🎂 الكيك</a></li>
+  <li><a href="index">المجتمع</a></li>
+   
+     <li><a href="about.html" target="_blank">من نحن</a></li>
+     <li><a href="privacy.html" target="_blank">سياسة الخصوصية</a></li>
+     <li><a href="contact.html" target="_blank">اتصل بنا</a></li>
+   </ul>
+ </div>
+
+
+
+
+    <div class="container">
+        <h1>🍽️ نصائح ووصفات الطبخ | Cooking Tips & Recipes</h1>
+        <p>اكتشف ألذ الوصفات السهلة والمميزة! | Discover the best and easiest recipes!</p>
+        <a href="#recipes" class="btn">👩‍🍳 اكتشف الوصفات | Explore Recipes</a>
+    </div>
+</header>
+
+<section id="recipes">
+    <div class="container">
+        <h2>🔥 وصفات مختارة | Featured Recipes</h2>
+        <div class="recipe-grid">
+            
+            <div class="recipe-card">
+                <img src="../image/pizza.jpg" alt="">
+                <h3>🍕 بيتزا إيطالية | Italian Pizza</h3>
+                <p>طريقة تحضير بيتزا منزلية لذيذة بسهولة! | Learn how to make homemade delicious pizza!</p>
+                <a href="pizza-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="../image/FB_IMG_17421490931751045.jpg" alt="كيك">
+                <h3>🎂 كيكة الشوكولاتة | Chocolate Cake</h3>
+                <p>وصفة سهلة لعمل كيكة شوكولاتة لذيذة. | Easy chocolate cake recipe.</p>
+                <a href="cake-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+            <img src="../image/FB_IMG_17421487671149019.jpg" alt="حريرة مغربية">
+            <h3>🥣 الحريرة المغربية | Moroccan Harira</h3>
+            <p>وصفة الحريرة المغربية الشهيرة لشهر رمضان المبارك! | Traditional Moroccan Harira for Ramadan!</p>
+            <a href="harira-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+            </div>
+<div class="recipe-card">
+    <img src="../image/FB_IMG_17421488215890490.jpg" alt="بغرير">
+    <h3>🥞 بغرير مغربي | Moroccan Baghrir</h3>
+    <p>طريقة تحضير بغرير لذيذ بمكونات بسيطة.</p>
+    <a href="baghrir-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+</div>
+
+<div class="recipe-card">
+    <img src="../image/FB_IMG_17421486459939195.jpg" alt="مسمن">
+    <h3>🫓 مسمن مغربي | Moroccan Msemen</h3>
+    <p>تعلم طريقة تحضير المسمن المغربي الشهي.</p>
+    <a href="msemen-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+</div>
+
+<div class="recipe-card">
+    <img src="../image/FB_IMG_17421487095360116.jpg" alt="طاجين مغربي">
+    <h3>🍲 طاجين مغربي | Moroccan Tajine</h3>
+    <p>اكتشف وصفة الطاجين المغربي الشهي بمكوناته الفريدة وطريقته الخاصة. | Discover the delicious Moroccan Tajine recipe with its unique ingredients and special preparation method.</p>
+    <a href="tagine-recipe.html" class="btn">📖 شاهد الوصفة | View Recipe</a>
+</div>
+
+        </div>
+    </div>
+</section>
+  
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
+</footer>
+
+
+<script>
+// فتح المودال عند الضغط على الرابط
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+// غلق المودال عند الضغط على زر الإغلاق
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+// غلق المودال عند الضغط خارج المحتوى
+window.onclick = function(event) {
+  var modals = document.getElementsByClassName("modal");
+  for (var i = 0; i < modals.length; i++) {
+    if (event.target == modals[i]) {
+      modals[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+// لفتح أو إغلاق القائمة المنبثقة عند الضغط على الأيقونة
+function toggleMenu() {
+  var menu = document.getElementById('menuDropdown');
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+
+
+
+window.onload = function() {
+    document.body.classList.add('loaded'); // إضافة الكلاس "loaded" لإخفاء الـ preloader
+};
+
+</script>
+</body>
+</html>

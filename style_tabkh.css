@@ -1,0 +1,368 @@
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+header {
+    background: url('https://source.unsplash.com/1600x900/?ramadan') center/cover no-repeat;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+*/
+
+
+
+header {
+    background: #ff7b00;
+    color: white;
+    padding: 20px;
+    
+}
+
+
+nav {
+    background-color: #f8b400; /* لون رمضاني جميل */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top:100px;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.recipe-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    
+}
+
+.recipe-card {
+    width: 300px;
+    background: #fff3e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.navigation-buttons .btn:hover {
+    background-color: #e65100;
+}
+
+
+@media (max-width: 768px) {
+    .recipe-grid {
+        display: block;
+    }
+
+    .recipe-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+.recipe-details {
+    padding: 20px;
+    background: #fff8e1;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    margin-left: 20px;
+}
+
+.recipe-details h2 {
+    color: #d84315;
+}
+
+.video-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+.video-popup iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.navigation-buttons .btn:hover {
+    background-color: #e65100;
+}
+
+
+.recipe-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.recipe-details img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.recipe-details .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+iframe {
+    width: 80%;
+    max-width: 600px;
+    height: 315px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+    
+    
+    
+    
+    
+    /* تنسيق الـ Preloader */
+    #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff7b00; /* تدرج لوني أو صورة خلفية */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* ليظل فوق المحتوى */
+    }
+    
+    /* تأثير التحميل (Spinner أو دائرة دوارة) */
+    .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #ff7b00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    }
+    
+    /* تأثير الدوران للـ loader */
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+    
+    /* إخفاء الـ preloader عند تحميل الصفحة */
+    body.loaded #preloader {
+    display: none;
+    }
+    
+    /* تنسيق المحتوى */
+    body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background: #ff7b00;
+    color: white;
+    padding: 20px;
+    }
+    
+    nav {
+    background-color: #f8b400;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    nav ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    nav ul li {
+    display: inline;
+    margin: 0 15px;
+    }
+    
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .container {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    }
+    
+    footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    }
+    
+    
+    .container img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    }
+    
+    
+    .container img {
+    width: 100%;  /* تجعل الصورة بعرض الشاشة */
+    height: auto;
+    border-radius: 10px; /* حواف مستديرة قليلاً */
+    }
+    
+    @media (min-width: 768px) {
+    .img {
+    width: 50%; /* على الأجهزة اللوحية وما فوق، الصورة تصبح أصغر */
+    }
+    }
