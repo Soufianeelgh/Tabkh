@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style_tabkh.css">
 
 <style>
-/* تنسيق الأيقونة لفتح القائمة */
+
     #menuIcon {
     font-size: 30px;
     
@@ -26,9 +26,9 @@
    
     }
     
-    /* القائمة المنبثقة */
+    
     .dropdown-menu {
-    display: none; /* مخفية بشكل افتراضي */
+    display: none; 
     position: fixed;
     top: 60px;
     right: 120px;
@@ -54,7 +54,6 @@
     font-size: 18px;
     }
     
-    /* تنسيق الصفحة عند الضغط على الأيقونة */
     body {
     font-family: Arial, sans-serif;
     }
@@ -69,7 +68,6 @@
 <header>
 <a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
 
- <!-- القائمة المنبثقة -->
  <div id="menuDropdown" class="dropdown-menu">
    <ul>
     <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
@@ -127,7 +125,6 @@
             </ol>
         </div>
 
-        <!-- فيديو الوصفة -->
         <h2>🎥 شاهد طريقة التحضير | Watch the Recipe</h2>
         <div class="video-container">
             <img src="https://img.youtube.com/vi/BAl9HT2V3bI/0.jpg" alt="طريقة تحضير طاجين اللحم بالبرقوق" class="video-thumbnail" onclick="openVideo()">
@@ -148,7 +145,6 @@
     <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
 </footer>
 
-<!-- كود JavaScript لتشغيل الفيديو وإخفاء / إظهار التفاصيل -->
 <script>
     function toggleDetails() {
         var details = document.getElementById("details");
@@ -182,9 +178,7 @@
     }
     }
     
-    // انتظر حتى يتم تحميل الصفحة بالكامل
     window.onload = function() {
-    // إضافة كلاس "loaded" بعد تحميل الصفحة
     document.body.classList.add('loaded');
     };
 </script>
