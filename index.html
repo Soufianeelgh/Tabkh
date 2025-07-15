@@ -7,7 +7,6 @@
     <link href="style_tabkh.css" rel="stylesheet">
     <meta name="ad01da15f9828689936a3fde0621a6575c116adb" content="ad01da15f9828689936a3fde0621a6575c116adb" />
     <style>
-    /* تنسيق الأيقونة لفتح القائمة */
     #menuIcon {
     font-size: 30px;
     
@@ -25,9 +24,8 @@
    
     }
     
-    /* القائمة المنبثقة */
     .dropdown-menu {
-    display: none; /* مخفية بشكل افتراضي */
+    display: none; 
     position: fixed;
     top: 60px;
     right: 106px;
@@ -53,13 +51,11 @@
     font-size: 18px;
     }
     
-    /* تنسيق الصفحة عند الضغط على الأيقونة */
     body {
     font-family: Arial, sans-serif;
     }
     </style>
 </head>
-<!-- Preloader - هذا العنصر سيظهر قبل تحميل الصفحة -->
 <div id="preloader">
     <div class="loader"></div>
 </div>
@@ -70,7 +66,6 @@
 
  <a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
 
- <!-- القائمة المنبثقة -->
  <div id="menuDropdown" class="dropdown-menu">
    <ul>
     <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
@@ -153,17 +148,14 @@
 
 
 <script>
-// فتح المودال عند الضغط على الرابط
 function openModal(modalId) {
   document.getElementById(modalId).style.display = "block";
 }
 
-// غلق المودال عند الضغط على زر الإغلاق
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
 
-// غلق المودال عند الضغط خارج المحتوى
 window.onclick = function(event) {
   var modals = document.getElementsByClassName("modal");
   for (var i = 0; i < modals.length; i++) {
@@ -177,7 +169,6 @@ window.onclick = function(event) {
 
 
 
-// لفتح أو إغلاق القائمة المنبثقة عند الضغط على الأيقونة
 function toggleMenu() {
   var menu = document.getElementById('menuDropdown');
   if (menu.style.display === "block") {
@@ -191,7 +182,7 @@ function toggleMenu() {
 
 
 window.onload = function() {
-    document.body.classList.add('loaded'); // إضافة الكلاس "loaded" لإخفاء الـ preloader
+    document.body.classList.add('loaded'); 
 };
 
 </script>
