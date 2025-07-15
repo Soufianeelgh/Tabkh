@@ -7,7 +7,6 @@
     <link href="style_tabkh.css" rel="stylesheet">
 
 <style>
-/* تنسيق الأيقونة لفتح القائمة */
     #menuIcon {
     font-size: 30px;
     
@@ -25,9 +24,9 @@
    
     }
     
-    /* القائمة المنبثقة */
+    
     .dropdown-menu {
-    display: none; /* مخفية بشكل افتراضي */
+    display: none; 
     position: fixed;
     top: 60px;
     right: 120px;
@@ -53,7 +52,7 @@
     font-size: 18px;
     }
     
-    /* تنسيق الصفحة عند الضغط على الأيقونة */
+  
     body {
     font-family: Arial, sans-serif;
     }
@@ -65,10 +64,10 @@
 <div id="preloader">
     <div class="loader"></div>
 </div>
-<!-- شريط التنقل -->
+
 <a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
 
- <!-- القائمة المنبثقة -->
+ 
  <div id="menuDropdown" class="dropdown-menu">
    <ul>
     <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
@@ -119,7 +118,7 @@
             <li>اترك الكيك يبرد وزينه بالشوكولاتة المذابة.</li>
         </ol>
 
-        <!-- فيديو الوصفة -->
+    
         <h2>🎥 فيديو طريقة التحضير:</h2>
         <div class="video-container">
         <img src="https://img.youtube.com/vi/0_jLf3DdNSE/0.jpg" alt="كيكة الشوكولاتة" class="video-thumbnail" onclick="openVideo()">
@@ -132,7 +131,7 @@
         </div>
         </div>
 
-        <!-- أزرار التنقل بين الوصفات -->
+   
         <div class="navigation-buttons">
             <a href="pizza-recipe.html" class="btn">🍕 الوصفة التالية: البيتزا</a>
             <a href="harira-recipe.html" class="btn">🔙 العودة إلى وصفة الحريرة</a>
@@ -143,18 +142,15 @@
 <footer>
     <p>© 2025 جميع الحقوق محفوظة | All Rights Reserved</p>
 </footer>
-
-<!-- كود JavaScript لتشغيل الفيديو -->
 <script>
 function openVideo() {
     document.getElementById("video-popup").style.display = "flex";
-    // قم بإضافة رابط الفيديو المناسب
     document.getElementById("video-frame").src = "https://www.youtube.com/embed/XXXXXXXXXXX?autoplay=1&rel=0";
 }
 
 function closeVideo() {
     document.getElementById("video-popup").style.display = "none";
-    document.getElementById("video-frame").src = ""; // إيقاف الفيديو عند إغلاق النافذة
+    document.getElementById("video-frame").src = ""; 
 }
 
 function toggleMenu() {
@@ -165,9 +161,7 @@ function toggleMenu() {
     menu.style.display = "block";
   }
 }
-// انتظر حتى يتم تحميل الصفحة بالكامل
 window.onload = function() {
-    // إضافة كلاس "loaded" بعد تحميل الصفحة
     document.body.classList.add('loaded');
 };
 </script>
