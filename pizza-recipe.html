@@ -6,7 +6,6 @@
     <title>وصفة بيتزا إيطالية | Italian Pizza Recipe</title>
     <link href="style_tabkh.css" rel="stylesheet">
 <style>
-/* تنسيق الأيقونة لفتح القائمة */
     #menuIcon {
     font-size: 30px;
     
@@ -24,9 +23,8 @@
    
     }
     
-    /* القائمة المنبثقة */
     .dropdown-menu {
-    display: none; /* مخفية بشكل افتراضي */
+    display: none;
     position: fixed;
     top: 60px;
     right: 120px;
@@ -52,7 +50,6 @@
     font-size: 18px;
     }
     
-    /* تنسيق الصفحة عند الضغط على الأيقونة */
     body {
     font-family: Arial, sans-serif;
     }
@@ -67,7 +64,6 @@
 <header>
 <a href="#" onclick="toggleMenu()" id="menuIcon">☰</a>
 
- <!-- القائمة المنبثقة -->
  <div id="menuDropdown" class="dropdown-menu">
    <ul>
     <li><a href="index.html">🏠 الصفحة الرئيسية</a></li>
@@ -154,9 +150,7 @@ function toggleMenu() {
   }
 }
 
-// انتظر حتى يتم تحميل الصفحة بالكامل
 window.onload = function() {
-    // إضافة كلاس "loaded" بعد تحميل الصفحة
     document.body.classList.add('loaded');
 };
 </script>
